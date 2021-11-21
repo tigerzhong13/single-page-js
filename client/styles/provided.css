@@ -1,0 +1,435 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: 'Verdana', -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo
+{
+    height: 32px;
+    width: 45px;
+}
+
+#title
+{
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 7px;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color: lightblue;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    background-color: lightcyan;
+    border-radius: 7px;
+    display: inline;
+    list-style-type: none;
+    cursor: pointer;
+}
+#logout {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: lightyellow;
+    margin: auto;
+    padding: 5px;
+    border-radius: 7px;
+    display: inline;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+/* Add your styles here */
+.loading
+{
+    display: flex;
+    margin-inline: 20vw;
+    margin-block: 3vh;
+    text-align: center;
+    flex-direction: column;
+}
+.loading_title
+{
+    font-weight: bold;
+    font-size: 48px;
+}
+.loading_content
+{
+    font-weight: normal;
+    font-size: 16px;
+}
+.login_box
+{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2vh;
+}
+.title
+{
+    margin-inline: 20vw;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 3vh;
+    text-align: center;
+}
+.login_form
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+.inputbox
+{
+    margin-block:1vh;
+    border:1px solid turquoise;
+    padding-inline: 1rem;
+    border-radius: 7px;
+    height: 2rem;
+    margin-inline: 40vw;
+}
+.login_box_button
+{
+    padding: 0.75rem;
+    margin-block: 1vh;
+    margin-inline: 42.5vw;
+    border: 1px transparent;
+    border-radius: 7px;
+}
+.button1
+{
+    background-color: aquamarine;
+}
+.button2
+{
+    background-color: aqua;
+}
+.reg
+{
+    margin-block:1vh;
+    border:1px solid turquoise;
+    padding-inline: 1rem;
+    border-radius: 7px;
+    height: 2rem;
+    margin-inline: 40vw;
+    display: none;
+}
+#popup
+{
+    display:none;
+    align-content: center;
+    margin-top:2vh;
+    margin-inline: 40vw;
+    border: 2px solid coral;
+    border-radius: 7px;
+    padding: 7px;
+    background-color: #ffeeee;
+    color:red;
+}
+#error_jpg
+{
+    height: 2vh;
+    margin-right: 1vw;
+}
+#posts
+{
+    display: none;
+    margin-block: 3vh;
+    margin-inline: 25vw;
+    flex-direction: column;
+}
+#user_info
+{
+    display: none;
+    text-align: left;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    border: 1px transparent;
+    border-radius: 7px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: lightgreen;
+    flex-direction: column;
+}
+.post_content
+{
+    display: flex;
+    text-align: left;
+    padding-block: 1vh;
+    padding-inline: 1vw;
+    border: 1px transparent;
+    border-radius: 7px;
+    background-color: lightblue;
+    flex-direction: column;
+    margin-block: 1vh;
+}
+.post_user
+{
+    font-size: 24px;
+    font-weight: bold;
+    background-color: lightgreen;
+    padding: 1vh;
+    border-radius: 7px;
+    width: fit-content;
+}
+.post_user:hover
+{
+    background-color: lightpink;
+    cursor: pointer;
+}
+.post_time
+{
+    font-size: 14px;
+    margin-top: 1vh;
+    color: gray;
+    padding: 1vh;
+    width: fit-content;
+    border: 1px transparent;
+    border-radius: 7px;
+    background-color: whitesmoke;
+    margin-block: 1vh;
+}
+.post_text
+{
+    margin-top: 1vh;
+    background-color: lightyellow;
+    padding: 1vh;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.comment
+{
+    margin-top: 1vh;
+    font-size: 14px;
+    background-color: lightcyan;
+    border-radius: 7px;
+    padding: 1vh;
+}
+.user_comment
+{
+    margin-top: 1vh;
+    font-size: 14px;
+    background-color: lightyellow;
+    border-radius: 7px;
+    padding: 1vh;
+}
+.comment:hover
+{
+    background-color: lightpink;
+    cursor: pointer;
+}
+.post_image
+{
+    margin-top: 1vh;
+    width: 30vw;
+    height: 30vw;
+    font-size: 14px;
+    border: 1px whitesmoke;
+    border-radius: 7px;
+}
+.info
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.follow
+{
+    margin-top: 1vh;
+    margin-left: 1vh;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    border-radius: 7px;
+    padding: 1vh;
+    cursor: pointer;
+}
+.follow:hover
+{
+    background: aliceblue;
+}
+.infor
+{
+    margin-top: 1vh;
+    font-size: 14px;
+    margin-left: 1vh;
+    background-color: lightyellow;
+    border-radius: 7px;
+    padding: 1vh;
+    width: fit-content;
+}
+.infos
+{
+    display: flex;
+}
+#info-content {
+    background-color: forestgreen;
+    margin: 15vw;
+    padding: 20px;
+    border: 1px whitesmoke;
+    border-radius: 7px;
+    height: fit-content;
+    width: 75vw;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background: lightyellow;
+    border-radius: 7px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px)
+{
+    .nav-item
+    {
+        display: block;
+        margin-block: 1vh;
+    }
+    #logout
+    {
+        margin-block: 1vh;
+    }
+    .loading
+    {
+        display: flex;
+        margin-inline: 5vw;
+        margin-block: 3vh;
+        text-align: center;
+        flex-direction: column;
+    }
+    .title
+    {
+        margin-inline: 5vw;
+    }
+    .inputbox
+    {
+        margin-inline: 10vw;
+    }
+    .login_box_button
+    {
+        margin-inline: 12.5vw;
+    }
+    .reg
+    {
+        margin-inline: 10vw;
+    }
+    #popup
+    {
+        margin-inline: 10vw;
+    }
+    #posts
+    {
+        display: none;
+        margin-block: 3vh;
+        margin-inline: 10vw;
+        flex-direction: column;
+    }
+    #user_info
+    {
+        text-align: center;
+    }
+    .post_content
+    {
+        align-items: center;
+    }
+    .post_user
+    {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .post_time
+    {
+        font-size: 14px;
+        margin-top: 1vh;
+        color: gray;
+    }
+    .post_text
+    {
+        margin-top: 1vh;
+        background-color: lightyellow;
+        padding: 1vh;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+    .comment
+    {
+        margin-top: 1vh;
+        font-size: 14px;
+        background-color: lightcyan;
+        border-radius: 7px;
+        padding: 1vh;
+    }
+    .user_comment
+    {
+        margin-top: 1vh;
+        font-size: 14px;
+        background-color: lightyellow;
+        border-radius: 7px;
+        padding: 1vh;
+    }
+    .comment:hover
+    {
+        background-color: lightpink;
+        cursor: pointer;
+    }
+    .post_image
+    {
+        width: 70vw;
+        height: 70vw;
+        border-radius: 7px;
+        padding: 1vh;
+    }
+    #info-content {
+        margin: 5vw;
+    }
+    .infos
+    {
+        flex-direction: column;
+    }
+}
